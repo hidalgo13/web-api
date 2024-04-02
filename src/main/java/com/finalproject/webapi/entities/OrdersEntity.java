@@ -2,6 +2,8 @@ package com.finalproject.webapi.entities;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity(name="orders")
 public class OrdersEntity {
     @Id
@@ -38,6 +40,8 @@ public class OrdersEntity {
     @JoinColumn(name="order_status")
     private StatusEntity statusEntity;
 
+    @OneToMany(mappedBy = "ordersEntity")
+    private List<OrderItemsEntity> orderItemsEntities;
 
 
 }

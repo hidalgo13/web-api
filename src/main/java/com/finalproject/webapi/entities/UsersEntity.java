@@ -40,5 +40,7 @@ public class UsersEntity {
     @OneToMany(mappedBy = "customer_id", cascade = CascadeType.ALL)
     private List<OrdersEntity> orders;
 
+    @OneToMany(mappedBy = "usersEntity", cascade = CascadeType.ALL)
+    private List<ReviewsEntity> reviewsEntities;
 
 }
