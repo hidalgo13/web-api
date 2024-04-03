@@ -45,6 +45,9 @@ public class UsersEntity {
 
 /* START Constructor part */
 
+    public UsersEntity() {
+    }
+
     public UsersEntity(int id, String name, String email, String account, String password, String address, String phone, RolesEntity rolesEntity) {
         this.id = id;
         this.name = name;

@@ -24,6 +24,8 @@ public class StatusEntity {
         this.status_name = status_name;
     }
 
+    public StatusEntity(){}
+
     /* END Constructor part */
 
     /* START Getter Setter part */

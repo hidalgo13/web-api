@@ -13,7 +13,7 @@ public class PaymentEntity {
     @Column(name="name")
     private String name;
 
-    @OneToMany(mappedBy = "ordersEntity")
+    @OneToMany(mappedBy = "paymentEntity")
     private List<OrdersEntity> orders;
 
 

@@ -29,6 +29,8 @@ public class RolesEntity {
         this.users = users;
     }
 
+    public RolesEntity(){}
+
 /* END Constructor part */
 
 
